@@ -1,133 +1,173 @@
-# Flight-Cancellation-Analysis-and-Prediction
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Flight Cancellation Analysis and Prediction</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 30px;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+    .container {
+      max-width: 960px;
+      margin: auto;
+      background: #fff;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    h1, h2 {
+      color: #2c3e50;
+    }
+    .logo img {
+      height: 80px;
+      display: block;
+      margin: 0 auto 10px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+    th, td {
+      border: 1px solid #ddd;
+      padding: 10px;
+      text-align: center;
+    }
+    th {
+      background-color: #2c3e50;
+      color: white;
+    }
+    a {
+      color: #1a73e8;
+      text-decoration: none;
+    }
+    code {
+      background: #f4f4f4;
+      padding: 2px 6px;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+<body>
 
-![Flyzy logo](path_to_flyzy_logo)  
-*IT and Services*
+<div class="container">
+  <div class="logo">
+    <img src="path_to_flyzy_logo" alt="Flyzy logo">
+  </div>
 
----
+  <h1>Flight Cancellation Analysis and Prediction</h1>
+  <p><strong>Domain:</strong> IT and Services</p>
+  <p><strong>Duration:</strong> 23 hours | <strong>Tasks:</strong> 4 | <strong>Skills:</strong> Python, EDA, ML & Algorithms</p>
 
-## Flight Cancellation Analysis and Prediction
+  <hr>
 
-**Duration:** 23 hours  
-**Tasks:** 4  
-**Skills:** Python, EDA, ML & Algorithms
+  <h2>About Company</h2>
+  <p>
+    Flyzy is a one-of-a-kind travel-tech platform aiming to transform modern-day travel into a completely hassle-free experience. It connects retailers, service providers, and other stakeholders facilitating air, road, and train travel with passengers via its hi-tech AI-enabled platform.
+  </p>
+  <p>
+    Flyzy ensures commercial benefits for stakeholders and will soon extend its services to rail and road travel, creating safer, simpler, and personalized passenger experiences.
+  </p>
 
----
+  <h2>Problem Statement</h2>
+  <p>
+    Flight cancellation disrupts travel and affects airline reputation and profitability. Predicting cancellations enables airlines to take proactive measures to reduce such disruptions.
+  </p>
 
-## About Company
+  <h2>Learning Objectives</h2>
+  <ul>
+    <li>Data cleaning and preparation techniques</li>
+    <li>Performing exploratory data analysis (EDA)</li>
+    <li>Implementing preprocessing for ML (encoding, scaling)</li>
+    <li>Building and evaluating classification models</li>
+    <li>Interpreting model performance metrics</li>
+  </ul>
 
-Flyzy is a one-of-a-kind travel-tech platform that aims to transform modern-day travel into a completely hassle-free experience by bringing innovation and the power of technology right to your fingertips, quite literally! It connects retailers, service providers, and other stakeholders facilitating air, road, and train travel with passengers via its unique hi-tech AI-enabled platform.
+  <h2>Business Objectives</h2>
+  <ul>
+    <li>Predict cancellations to reduce impact and cost</li>
+    <li>Improve operational planning and customer satisfaction</li>
+    <li>Position Flyzy as a predictive, tech-enabled travel partner</li>
+  </ul>
 
-Apart from creating safer, simpler, and more personalized experiences for passengers, Flyzy also ensures commercial benefits for the service providers and stakeholders involved. Flyzy's services will soon be made available for other popular modes of travel like rail and road.
+  <h2>Dataset Description</h2>
+  <p>
+    <a href="https://docs.google.com/spreadsheets/d/15eBYLoEDagmYb4Rh_pQRfk20VICkyf2Vin2ob-w2GeY/edit?gid=0" target="_blank">
+      Download Dataset
+    </a>
+  </p>
+  <ul>
+    <li><code>Flight_ID</code>: Unique identifier (not used for modeling)</li>
+    <li><code>Airline</code>: Operating airline (5 categories)</li>
+    <li><code>Flight_Distance</code>: Distance in km (standardized)</li>
+    <li><code>Origin_Airport</code> & <code>Destination_Airport</code>: Departure/arrival airports</li>
+    <li><code>Scheduled_Departure_Time</code>: Minutes past midnight</li>
+    <li><code>Day_of_Week</code>: 1 (Mon) to 7 (Sun)</li>
+    <li><code>Month</code>: 1 (Jan) to 12 (Dec)</li>
+    <li><code>Airplane_Type</code>: Aircraft model</li>
+    <li><code>Weather_Score</code>: Severity of weather</li>
+    <li><code>Previous_Flight_Delay_Minutes</code>: Delay in minutes</li>
+    <li><code>Airline_Rating</code>: Airline quality score</li>
+    <li><code>Passenger_Load</code>: Load percentage</li>
+    <li><code>Flight_Cancelled</code>: Target variable (1 = cancelled)</li>
+  </ul>
 
----
+  <h2>Prerequisites</h2>
+  <ul>
+    <li>Basic Python knowledge</li>
+    <li>Familiarity with Pandas, NumPy</li>
+    <li>Understanding of EDA and data visualization</li>
+    <li>Intro to classification ML models</li>
+  </ul>
 
-## Problem Statement
+  <p><strong>Tools:</strong> Python, Jupyter/Colab, Pandas, Seaborn, Scikit-learn</p>
 
-Flyzy focuses on providing a smooth and hassle-free air travel experience, offering personalized in-flight and airport recommendations, real-time flight tracking, mobile check-in, and more. Flyzy aims to redefine the future of air travel with a connected experience from start to finish.
+  <h2>Tasks</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Task Name</th>
+        <th>Hours</th>
+        <th>Skills</th>
+        <th>Status</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Data Cleaning & Preprocessing Pipeline Development</td>
+        <td>5</td>
+        <td>Python</td>
+        <td>Completed</td>
+      </tr>
+      <tr>
+        <td>Exploratory Data Analysis & Insights Generation</td>
+        <td>6</td>
+        <td>EDA</td>
+        <td>Completed</td>
+      </tr>
+      <tr>
+        <td>Feature Engineering for Predictive Modeling</td>
+        <td>6</td>
+        <td>ML & Algorithms, Python</td>
+        <td>Completed</td>
+      </tr>
+      <tr>
+        <td>Classification Modeling, Evaluation & Result Interpretation</td>
+        <td>6</td>
+        <td>ML & Algorithms, Python</td>
+        <td>Completed</td>
+      </tr>
+    </tbody>
+  </table>
 
-Flight cancellation is a significant issue in aviation, disrupting customers' plans and impacting airlines' reputation and profitability. Predicting flight cancellations can help airlines take preventive measures and minimize disruptions.
+  <p style="text-align:center; margin-top: 30px;"><strong>Download Report Again</strong></p>
 
----
+</div>
 
-## Learning Objectives
-
-- Understand and apply data cleaning techniques to prepare raw datasets for analysis.  
-- Perform exploratory data analysis (EDA) to uncover patterns, trends, and relationships within the data.  
-- Implement preprocessing steps such as encoding and feature scaling to prepare data for machine learning models.  
-- Build, evaluate, and compare classification models to predict binary outcomes effectively.  
-- Interpret model performance metrics to select the most suitable algorithm for the business problem.
-
----
-
-## Business Objectives
-
-- Reduce the impact of flight cancellations by predicting them in advance.  
-- Improve Flyzy’s operational planning and customer satisfaction.  
-- Strengthen Flyzy’s positioning as a predictive, tech-enabled travel partner.
-
----
-
-## Dataset Description
-
-[Download Dataset](https://docs.google.com/spreadsheets/d/15eBYLoEDagmYb4Rh_pQRfk20VICkyf2Vin2ob-w2GeY/edit?gid=0)
-
-The dataset contains the following columns:
-
-- **Flight_ID (Numeric):** Unique identifier for each flight (not used for modeling).  
-- **Airline (Categorical):** Airline operating the flight (5 different airlines).  
-- **Flight_Distance (Numeric):** Distance of flight in kilometers (standardized).  
-- **Origin_Airport & Destination_Airport (Categorical):** Airports of departure and arrival (5 airports each).  
-- **Scheduled_Departure_Time (Numeric):** Minutes past midnight when flight departs.  
-- **Day_of_Week (Numeric):** Day flight is scheduled (1=Monday to 7=Sunday).  
-- **Month (Numeric):** Month of the year (1=Jan to 12=Dec).  
-- **Airplane_Type (Categorical):** Model/type of airplane (5 types).  
-- **Weather_Score (Numeric):** Severity score of weather conditions.  
-- **Previous_Flight_Delay_Minutes (Numeric):** Delay of previous flight by same airplane.  
-- **Airline_Rating (Numeric):** Quality/reputation score of airline.  
-- **Passenger_Load (Numeric):** Flight load percentage.  
-- **Flight_Cancelled (Binary):** Target variable, 1 = cancelled, 0 = not cancelled.
-
----
-
-## Prerequisites
-
-- Understanding of Python basics  
-- Familiarity with Pandas and NumPy  
-- Basic knowledge of statistics and data visualization  
-- Introductory machine learning concepts (classification models)
-
-### Platform/Tools
-
-- Python (Jupyter Notebook or Google Colab)  
-- Pandas, NumPy  
-- Matplotlib, Seaborn (for visualization)  
-- Scikit-learn (for ML models)  
-- GitHub or Google Drive (for submission)
-
----
-
-## Tasks
-
-<table>
-  <thead>
-    <tr>
-      <th colspan="4" style="text-align:center;">Tasks</th>
-    </tr>
-    <tr>
-      <th style="text-align:center;">Task Name</th>
-      <th style="text-align:center;">Hours</th>
-      <th style="text-align:center;">Skills</th>
-      <th style="text-align:center;">Status</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align:center;">Data Cleaning & Preprocessing Pipeline Development</td>
-      <td style="text-align:center;">5</td>
-      <td style="text-align:center;">Python</td>
-      <td style="text-align:center;">Completed</td>
-    </tr>
-    <tr>
-      <td style="text-align:center;">Exploratory Data Analysis & Insights Generation</td>
-      <td style="text-align:center;">6</td>
-      <td style="text-align:center;">EDA</td>
-      <td style="text-align:center;">Completed</td>
-    </tr>
-    <tr>
-      <td style="text-align:center;">Feature Engineering for Predictive Modeling</td>
-      <td style="text-align:center;">6</td>
-      <td style="text-align:center;">ML & Algorithms, Python</td>
-      <td style="text-align:center;">Completed</td>
-    </tr>
-    <tr>
-      <td style="text-align:center;">Classification Modeling, Evaluation & Result Interpretation</td>
-      <td style="text-align:center;">6</td>
-      <td style="text-align:center;">ML & Algorithms, Python</td>
-      <td style="text-align:center;">Completed</td>
-    </tr>
-    <tr>
-      <td colspan="3" style="text-align:center;"></td>
-      <td style="text-align:center;">Download Again</td>
-    </tr>
-  </tbody>
-</table>
+</body>
+</html>
