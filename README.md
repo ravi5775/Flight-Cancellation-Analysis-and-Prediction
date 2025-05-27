@@ -1,8 +1,12 @@
 # Flight-Cancellation-Analysis-and-Prediction
 
-![Flyzy Logo](https://res.cloudinary.com/vishal8802/image/upload/v1633689375/test/wrd6d2jzkvjt84k6bvpy.png)
-![Belong logo](https://dashboard.belong.education/logo.png) 
-![Bytexl logo](https://bytexl.app//static/media/bytexl.e7dd1e7b8a239386c438.png) 
+<p align="center">
+  <img src="https://res.cloudinary.com/vishal8802/image/upload/v1633689375/test/wrd6d2jzkvjt84k6bvpy.png" alt="Flyzy Logo" width="120"/>
+  &nbsp;&nbsp;&nbsp;
+  <img src="https://dashboard.belong.education/logo.png" alt="Belong Logo" width="100"/>
+  &nbsp;&nbsp;&nbsp;
+  <img src="https://bytexl.app//static/media/bytexl.e7dd1e7b8a239386c438.png" alt="Bytexl Logo" width="100"/>
+</p>
 *IT and Services*
 
 
